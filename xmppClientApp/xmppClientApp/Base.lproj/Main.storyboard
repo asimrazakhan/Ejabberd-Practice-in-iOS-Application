@@ -95,6 +95,9 @@
                             <constraint firstItem="RXX-R1-yxD" firstAttribute="centerX" secondItem="p4g-YG-hh3" secondAttribute="centerX" id="iBZ-2p-034"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="RXX-R1-yxD" id="23y-AQ-gXb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EN8-NF-0U2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
