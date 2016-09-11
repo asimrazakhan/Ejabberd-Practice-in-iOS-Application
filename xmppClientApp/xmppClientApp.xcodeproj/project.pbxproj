@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F8478737F29CC20AA0FEBC9 /* Pods_xmppClientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BC67C0DE5A37F8ADA26593 /* Pods_xmppClientApp.framework */; };
 		A5F94ED31D842BF6000870BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F94ED21D842BF6000870BC /* AppDelegate.swift */; };
 		A5F94ED51D842BF6000870BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F94ED41D842BF6000870BC /* ViewController.swift */; };
 		A5F94ED81D842BF6000870BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F94ED61D842BF6000870BC /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71BC67C0DE5A37F8ADA26593 /* Pods_xmppClientApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppClientApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92372F2BE4AC36A25F95EEB4 /* Pods-xmppClientApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppClientApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppClientApp/Pods-xmppClientApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A5F94ECF1D842BF5000870BC /* xmppClientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppClientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F94ED21D842BF6000870BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F94ED41D842BF6000870BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A5F94ED91D842BF6000870BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5F94EDC1D842BF6000870BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5F94EDE1D842BF6000870BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B79797BB91A755E2AB61E4E1 /* Pods-xmppClientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppClientApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppClientApp/Pods-xmppClientApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8478737F29CC20AA0FEBC9 /* Pods_xmppClientApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08AA3E627EDF0BDFB705FEAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92372F2BE4AC36A25F95EEB4 /* Pods-xmppClientApp.debug.xcconfig */,
+				B79797BB91A755E2AB61E4E1 /* Pods-xmppClientApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5F94EC61D842BF5000870BC = {
 			isa = PBXGroup;
 			children = (
 				A5F94ED11D842BF5000870BC /* xmppClientApp */,
 				A5F94ED01D842BF5000870BC /* Products */,
+				08AA3E627EDF0BDFB705FEAD /* Pods */,
+				F42380DA9F3234AFD16B37A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = xmppClientApp;
 			sourceTree = "<group>";
 		};
+		F42380DA9F3234AFD16B37A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71BC67C0DE5A37F8ADA26593 /* Pods_xmppClientApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F94EE11D842BF6000870BC /* Build configuration list for PBXNativeTarget "xmppClientApp" */;
 			buildPhases = (
+				EDCD4F4D94D881D1064CE853 /* [CP] Check Pods Manifest.lock */,
 				A5F94ECB1D842BF5000870BC /* Sources */,
 				A5F94ECC1D842BF5000870BC /* Frameworks */,
 				A5F94ECD1D842BF5000870BC /* Resources */,
+				320C3E396BCF025F497C2C25 /* [CP] Embed Pods Frameworks */,
+				4FDF96806A7503403D1D05CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		320C3E396BCF025F497C2C25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xmppClientApp/Pods-xmppClientApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FDF96806A7503403D1D05CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xmppClientApp/Pods-xmppClientApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCD4F4D94D881D1064CE853 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5F94ECB1D842BF5000870BC /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		A5F94EE21D842BF6000870BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92372F2BE4AC36A25F95EEB4 /* Pods-xmppClientApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = xmppClientApp/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		A5F94EE31D842BF6000870BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79797BB91A755E2AB61E4E1 /* Pods-xmppClientApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = xmppClientApp/Info.plist;
@@ -286,6 +363,7 @@
 				A5F94EE31D842BF6000870BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

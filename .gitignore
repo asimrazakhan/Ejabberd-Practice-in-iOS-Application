@@ -1,0 +1,7 @@
+\# .gitignore
+
+# ignore directories
+./xmppClientApp/Pods/*
+
+# ignore files
+.DS_Store

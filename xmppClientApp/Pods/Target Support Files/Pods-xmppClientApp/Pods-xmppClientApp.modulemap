@@ -1,0 +1,6 @@
+framework module Pods_xmppClientApp {
+  umbrella header "Pods-xmppClientApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
