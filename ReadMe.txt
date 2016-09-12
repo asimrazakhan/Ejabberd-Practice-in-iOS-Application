@@ -4,7 +4,9 @@ https://blog.process-one.net/building-an-xmpp-ios-client-in-swift-2/
 
 ## XMPP Framework
 https://github.com/robbiehanson/XMPPFramework
+
 ## XMPP guid for iOS Developers
+https://github.com/robbiehanson/XMPPFramework/wiki/GettingStarted_iOS
 
 ## Elegant Messaging UI library
 https://github.com/jessesquires/JSQMessagesViewController
