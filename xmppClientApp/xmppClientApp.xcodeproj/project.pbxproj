@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6F8478737F29CC20AA0FEBC9 /* Pods_xmppClientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BC67C0DE5A37F8ADA26593 /* Pods_xmppClientApp.framework */; };
-		A5760A061D85958F00A0A91A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5760A051D85958F00A0A91A /* SecondViewController.swift */; };
 		A5F94ED31D842BF6000870BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F94ED21D842BF6000870BC /* AppDelegate.swift */; };
 		A5F94ED51D842BF6000870BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F94ED41D842BF6000870BC /* ViewController.swift */; };
 		A5F94ED81D842BF6000870BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F94ED61D842BF6000870BC /* Main.storyboard */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		71BC67C0DE5A37F8ADA26593 /* Pods_xmppClientApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppClientApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92372F2BE4AC36A25F95EEB4 /* Pods-xmppClientApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppClientApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppClientApp/Pods-xmppClientApp.debug.xcconfig"; sourceTree = "<group>"; };
-		A5760A051D85958F00A0A91A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A5F94ECF1D842BF5000870BC /* xmppClientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppClientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F94ED21D842BF6000870BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F94ED41D842BF6000870BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			children = (
 				A5F94ED21D842BF6000870BC /* AppDelegate.swift */,
 				A5F94ED41D842BF6000870BC /* ViewController.swift */,
-				A5760A051D85958F00A0A91A /* SecondViewController.swift */,
 				A5F94ED61D842BF6000870BC /* Main.storyboard */,
 				A5F94ED91D842BF6000870BC /* Assets.xcassets */,
 				A5F94EDB1D842BF6000870BC /* LaunchScreen.storyboard */,
@@ -214,7 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5760A061D85958F00A0A91A /* SecondViewController.swift in Sources */,
 				A5F94ED51D842BF6000870BC /* ViewController.swift in Sources */,
 				A5F94ED31D842BF6000870BC /* AppDelegate.swift in Sources */,
 			);
