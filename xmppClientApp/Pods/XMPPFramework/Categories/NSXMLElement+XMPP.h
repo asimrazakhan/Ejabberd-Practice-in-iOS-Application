@@ -1,6 +1,8 @@
 #import <Foundation/Foundation.h>
 
-@import KissXML;
+#if TARGET_OS_IPHONE
+  #import "DDXML.h"
+#endif
 
 
 @interface NSXMLElement (XMPP)

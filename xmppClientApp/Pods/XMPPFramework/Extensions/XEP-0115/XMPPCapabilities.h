@@ -4,7 +4,6 @@
 #define _XMPP_CAPABILITIES_H
 
 @protocol XMPPCapabilitiesStorage;
-@class GCDTimerWrapper;
 
 /**
  * This class provides support for capabilities discovery.
@@ -29,7 +28,7 @@
 	
 	NSMutableSet *discoRequestJidSet;
 	NSMutableDictionary *discoRequestHashDict;
-	NSMutableDictionary<XMPPJID*,GCDTimerWrapper*> *discoTimerJidDict;
+	NSMutableDictionary *discoTimerJidDict;
 	
 	BOOL autoFetchHashedCapabilities;
 	BOOL autoFetchNonHashedCapabilities;

@@ -3,7 +3,7 @@
 @class XMPPIQ;
 @class XMPPJID;
 @class XMPPStream;
-@import CocoaAsyncSocket;
+@class GCDAsyncSocket;
 
 /**
  * TURNSocket is an implementation of XEP-0065: SOCKS5 Bytestreams.
@@ -11,7 +11,7 @@
  * It is used for establishing an out-of-band bytestream between any two XMPP users,
  * mainly for the purpose of file transfer.
 **/
-@interface TURNSocket : NSObject <GCDAsyncSocketDelegate>
+@interface TURNSocket : NSObject
 {
 	int state;
 	BOOL isClient;

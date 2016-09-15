@@ -128,7 +128,7 @@ static XMPPvCardCoreDataStorage *sharedInstance;
 		                                          inManagedObjectContext:[self managedObjectContext]];
 		
 		vCard.vCardTemp = nil;
-		vCard.lastUpdated = [NSDate distantPast];
+		vCard.lastUpdated = [NSDate date];
 	}];
 }
 

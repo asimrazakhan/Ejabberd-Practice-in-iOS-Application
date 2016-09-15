@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>KissXML.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-xmppClientApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>47C013FBD5D263EFEC8A7A4CA217AD9D</key>
+		<key>555689DEA7426B7439863019207C090C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>642D00FDDCAA9F03931F7EF469BA105B</key>
+		<key>B1D17BA74BEACBD28F897F231B5907A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F7DB68CFD5CA0C1BCC8BCF817BF3B46</key>
+		<key>CDD42202D543C08596F25D6D9D2987FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A2E8FED01C8A6BC8ADFCF3C3B78368F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B37E19CA872A7535725D1E1946E5C271</key>
+		<key>E365ED5A199EC8D144191276D016E213</key>
 		<dict>
 			<key>primary</key>
 			<true/>

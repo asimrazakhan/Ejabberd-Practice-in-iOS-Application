@@ -256,7 +256,7 @@ NSString *const kXMPPvCardTempElement = @"vCard";
 }
 
 
-- (NSString *)vPrefix {
+- (NSString *)prefix {
 	NSString *result = nil;
 	NSXMLElement *name = [self elementForName:@"N"];
 	
@@ -272,7 +272,7 @@ NSString *const kXMPPvCardTempElement = @"vCard";
 }
 
 
-- (void)setVPrefix:(NSString *)prefix {
+- (void)setPrefix:(NSString *)prefix {
 	XMPP_VCARD_SET_N_CHILD(prefix, @"PREFIX");
 }
 
@@ -746,14 +746,7 @@ NSString *const kXMPPvCardTempElement = @"vCard";
 	if (phonetic != nil) {
 		[elem setStringValue:phonetic];
 	} else if (sound != nil) {
-        // The old code never actually did anything
-        // because the phonetic object is a NSString but
-        // the children are DDXMLNodes.
-        //
-        // [self removeChildAtIndex:[[self children] indexOfObject:phonetic]];
-        
-        // Maybe this is what was intended? I'm not sure.
-        [self removeChildAtIndex:[[self children] indexOfObject:sound]];
+		[self removeChildAtIndex:[[self children] indexOfObject:phonetic]];
 	}
 }
 

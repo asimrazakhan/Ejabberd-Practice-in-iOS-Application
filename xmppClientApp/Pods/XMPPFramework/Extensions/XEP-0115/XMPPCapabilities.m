@@ -152,10 +152,12 @@
 }
 
 - (void)dealloc
-{
-    [discoTimerJidDict enumerateKeysAndObjectsUsingBlock:^(XMPPJID * _Nonnull key, GCDTimerWrapper * _Nonnull obj, BOOL * _Nonnull stop) {
-        [obj cancel];
-    }];
+{	
+	for (GCDTimerWrapper *timerWrapper in discoTimerJidDict)
+	{
+		[timerWrapper cancel];
+	}
+	
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

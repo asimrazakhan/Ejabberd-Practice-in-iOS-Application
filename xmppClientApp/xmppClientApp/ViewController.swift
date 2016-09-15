@@ -28,6 +28,10 @@ class ViewController: UIViewController {
     @IBAction func done(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        resignFirstResponder()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
