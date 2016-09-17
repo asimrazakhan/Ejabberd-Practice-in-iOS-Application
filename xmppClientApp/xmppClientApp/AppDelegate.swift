@@ -10,8 +10,8 @@ import UIKit
 import XMPPFramework
 
 protocol ChatDelegate {
-    func userWentOnline(name: String)
-    func userWentOffline(name: String)
+    func buddyWentOnline(name: String)
+    func buddyWentOffline(name: String)
     func didDisconnect()
 }
 
@@ -75,9 +75,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, XMPPRosterDelegate, XMPPS
         let presence = XMPPPresence()
         let domain = xmppStream.myJID.domain
         
-        if domain == "gmail.com" || domain == "gtalk.com" || domain == "talk.google.com" {
+        if domain == "desktop-j9lkhke" {
             let priority = DDXMLElement.elementWithName("priority", stringValue: "24") as! DDXMLElement
             presence.addChild(priority)
+            print("goOnline Called")
         }
         xmppStream.sendElement(presence)
     }
@@ -154,9 +155,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, XMPPRosterDelegate, XMPPS
         if presenceFromUser != myUsername {
             print("Did receive presence from \(presenceFromUser)")
             if presenceType == "available" {
-                delegate.userWentOnline("\(presenceFromUser)@gmail.com")
+                delegate.buddyWentOnline("\(presenceFromUser)@gmail.com")
             } else if presenceType == "unavailable" {
-                delegate.userWentOffline("\(presenceFromUser)@gmail.com")
+                delegate.buddyWentOffline("\(presenceFromUser)@gmail.com")
             }
         }
     }

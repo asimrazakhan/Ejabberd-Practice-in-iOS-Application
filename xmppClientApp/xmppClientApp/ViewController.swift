@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         
         if appDelegate.connect() {
             dismissViewControllerAnimated(true, completion: nil)
+            print("Connected to the Server")
         }
     }
     
