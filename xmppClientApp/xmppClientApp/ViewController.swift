@@ -38,8 +38,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        loginTextField.text = "asim@desktop-j9lkhke"
-        passwordTextField.text = "visibility"
+        loginTextField.text = "ali@desktop-j9lkhke"
+        passwordTextField.text = "ali"
     }
 
     override func didReceiveMemoryWarning() {

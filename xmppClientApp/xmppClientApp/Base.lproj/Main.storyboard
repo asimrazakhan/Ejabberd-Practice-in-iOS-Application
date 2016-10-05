@@ -23,8 +23,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNU-1f-lCB">
-                                <rect key="frame" x="405" y="305" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="409" y="305" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="login:" destination="J2a-7Q-nwd" eventType="touchUpInside" id="e9u-jg-FDx"/>
                                 </connections>
@@ -43,7 +43,7 @@
                             <constraint firstItem="a3O-hs-Hig" firstAttribute="top" secondItem="s6q-gI-XMg" secondAttribute="bottom" constant="8" symbolic="YES" id="0Gk-uQ-yrl"/>
                             <constraint firstItem="kNU-1f-lCB" firstAttribute="top" secondItem="a3O-hs-Hig" secondAttribute="bottom" constant="8" symbolic="YES" id="51g-Pc-6kY"/>
                             <constraint firstItem="s6q-gI-XMg" firstAttribute="leading" secondItem="a3O-hs-Hig" secondAttribute="leading" id="FDr-IP-6eG"/>
-                            <constraint firstItem="a3O-hs-Hig" firstAttribute="trailing" secondItem="kNU-1f-lCB" secondAttribute="trailing" id="TRw-q9-9XM"/>
+                            <constraint firstItem="a3O-hs-Hig" firstAttribute="trailing" secondItem="kNU-1f-lCB" secondAttribute="trailing" constant="4" id="TRw-q9-9XM"/>
                             <constraint firstItem="s6q-gI-XMg" firstAttribute="top" secondItem="5qX-rO-vck" secondAttribute="bottom" constant="209" id="gV8-Ec-mxg"/>
                             <constraint firstItem="s6q-gI-XMg" firstAttribute="centerX" secondItem="9Jj-BH-mnM" secondAttribute="centerX" id="rD3-y9-bbB"/>
                             <constraint firstItem="s6q-gI-XMg" firstAttribute="trailing" secondItem="a3O-hs-Hig" secondAttribute="trailing" id="svt-Mz-t2k"/>

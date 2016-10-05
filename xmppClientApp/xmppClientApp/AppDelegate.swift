@@ -69,6 +69,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, XMPPRosterDelegate, XMPPS
         xmppRoster.activate(xmppStream)
         xmppStream.addDelegate(self, delegateQueue: dispatch_get_main_queue())
         xmppRoster.addDelegate(self, delegateQueue: dispatch_get_main_queue())
+        
+        // Added from http://stackoverflow.com/questions/36982859/xmpp-connection-with-server-and-configure-client-side-in-ios
+        
+        xmppStream.hostName = "192.168.88.208"
+        xmppStream.hostPort = 5222
+        
     }
     
     private func goOnline() {
@@ -76,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, XMPPRosterDelegate, XMPPS
         let domain = xmppStream.myJID.domain
         
         if domain == "desktop-j9lkhke" {
-            let priority = DDXMLElement.elementWithName("priority", stringValue: "24") as! DDXMLElement
+            let priority = DDXMLElement.elementWithName("priority", stringValue: "5") as! DDXMLElement
             presence.addChild(priority)
             print("goOnline Called")
         }
