@@ -6,6 +6,8 @@ https://blog.process-one.net/building-an-xmpp-ios-client-in-swift-2/
 http://code.tutsplus.com/series/building-a-jabber-client-for-ios--mobile-22620
 
 ## Framework
+
+## Form 'Cocoapods' 
 JSQMessagesViewController
 JSQSoundPlayer
 IQAudioControllerRecorder
@@ -14,6 +16,10 @@ CocoaAsyncSocket
 XMPPFramwork
 xmpp-messanger-ios
 IDMPhotoBrowser
+
+## From 'GitHub'
+ProgressHUD
+RNCryptor
 
 
 ## XMPP guid for iOS Developers
